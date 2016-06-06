@@ -18,6 +18,7 @@ def mrf_map(X, Y, mu, sigma, nb_class, max_map_iter, alpha, beta):
         Output:     Regularized label field
     """
     im_x, im_y = Y.shape[:2]
+    print 'test'
     y = Y.reshape((-1,1))
     U = np.zeros((im_x * im_y, nb_class))
     sum_U_MAP = np.zeros((1, max_map_iter))
